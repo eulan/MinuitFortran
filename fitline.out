@@ -1,0 +1,90 @@
+ ***************************************************************************
+  MINUIT RELEASE 96.03  INITIALIZED.   DIMENSIONS 100/100  EPSMAC=  0.89E-15
+ ***************************************************************************
+                          MINUIT DATA BLOCK NO.   1
+ ***************************************************************************
+ ejemplo                                           
+ ******************************************************************************
+
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 'par_a     '   0.25000      0.10000E-01     no limits
+     2 'par_b     '    3.0000      0.10000E-01     no limits
+     3 'par_c     '    1.0000      0.10000E-01     no limits
+    ***************************************************************************
+
+ MINUIT: FIRST CALL TO USER FUNCTION, WITH IFLAG=1
+
+ FCN=   94.24807     FROM PARAMETR  STATUS=RESET          2 CALLS        2 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+
+  EXT PARAMETER               CURRENT GUESS      PHYSICAL LIMITS       
+  NO.   NAME        VALUE          ERROR       NEGATIVE      POSITIVE  
+   1    par_a      0.25000       0.10000E-01
+   2    par_b       3.0000       0.10000E-01
+   3    par_c       1.0000       0.10000E-01
+ **********
+ **    1 **MINIMIZE 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY 1.  CONVERGENCE WHEN EDM .LT. 0.10E-03
+
+ FCN=   94.24807     FROM MIGRAD    STATUS=INITIATE      12 CALLS       14 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME        VALUE          ERROR          SIZE      DERIVATIVE 
+   1    par_a      0.25000       0.10000E-01   0.10000E-01   -1355.7    
+   2    par_b       3.0000       0.10000E-01   0.10000E-01   -237.81    
+   3    par_c       1.0000       0.10000E-01   0.10000E-01    764.42    
+
+ MIGRAD MINIMIZATION HAS CONVERGED.
+
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+
+ FCN=   92.92230     FROM MIGRAD    STATUS=CONVERGED     71 CALLS       73 TOTAL
+                     EDM=  0.45E-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME        VALUE          ERROR          SIZE      DERIVATIVE 
+   1    par_a      0.25331       0.31294E-02   0.45220E-05   0.26318    
+   2    par_b       2.9733       0.35738E-01   0.14405E-04   0.63232E-01
+   3    par_c      0.99406       0.10600E-01   0.47837E-05  -0.17631    
+
+ EXTERNAL ERROR MATRIX.    NDIM= 100    NPAR=  3    ERR DEF=  1.00    
+  0.979E-05-0.577E-04-0.938E-05
+ -0.577E-04 0.128E-02 0.365E-03
+ -0.938E-05 0.365E-03 0.112E-03
+
+ PARAMETER  CORRELATION COEFFICIENTS
+       NO.  GLOBAL     1     2     3
+        1  0.95224  1.000-0.516-0.283
+        2  0.99637 -0.516 1.000 0.964
+        3  0.99544 -0.283 0.964 1.000
+ **********
+ **    2 **MINOS 
+ **********
+
+ MINUIT TASK: ejemplo                                           
+
+ FCN=   92.92230     FROM MINOS     STATUS=SUCCESSFUL    80 CALLS      153 TOTAL
+                     EDM=  0.45E-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME        VALUE          ERROR      NEGATIVE      POSITIVE   
+   1    par_a      0.25331       0.31294E-02  -0.31204E-02   0.31325E-02
+   2    par_b       2.9733       0.35738E-01  -0.35517E-01   0.35892E-01
+   3    par_c      0.99406       0.10600E-01  -0.10540E-01   0.10651E-01
+ **********
+ **    3 **RETURN 
+ **********
+
+ CALL TO USER FUNCTION WITH IFLAG = 3
+
+ Final reasult of the fitting_ 
+ a =   0.25330809643885954     
+ b =    2.9732526528220102     
+ c =   0.99405866059799819     
+ chisq =    92.922298379901292     
+ _____________________________ 
+ ..........MINUIT TERMINATED AND RETURNS TO USER PROGRAM.            

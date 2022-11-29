@@ -1,0 +1,10 @@
+set title
+ejemplo
+param
+1     'par_a'      0.25       0.01
+2     'par_b'      3.0        0.01
+3     'par_c'      1.0       0.01
+
+minimize
+minos
+return
