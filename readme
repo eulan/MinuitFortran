@@ -1,0 +1,5 @@
+Compilation:
+
+gfortran example.f minuit-master/*.o
+
+where minuit-master is the library of minuit
